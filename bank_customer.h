@@ -10,17 +10,18 @@ private:
     int id;
     string name;
     double balance;
+    string address;
+    string phoneNumber;
 
 public:
-    BankCustomer(int id, const string& name, double balance) : id(id), name(name), balance(balance) {
-        this->id = id;
-        this->name = name;
-        this->balance = balance;
-    }
+    BankCustomer(int id, const string& name, double balance, const string& address, const string& phoneNumber)
+        : id(id), name(name), balance(balance), address(address), phoneNumber(phoneNumber) {}
 
     int getId() const;
     string getName() const;
     double getBalance() const;
+    string getAddress() const { return address; } 
+    string getPhoneNumber() const { return phoneNumber; } 
 
     void printInfo() const;
     void setName(const string& name);
