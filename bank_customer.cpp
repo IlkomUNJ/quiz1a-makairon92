@@ -34,5 +34,7 @@ bool BankCustomer::withdrawBalance(double amount){
 void BankCustomer::printInfo() const {
     std::cout << "Customer Name: " << this->name << std::endl;
     std::cout << "Customer ID: " << this->id << std::endl;
+    std::cout << "  Address: " << this->address << endl;       
+    std::cout << "  Phone Number: " << this->phoneNumber << endl;
     std::cout << "Balance: $" << this->balance << std::endl;
 }

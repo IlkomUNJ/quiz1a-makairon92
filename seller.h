@@ -27,6 +27,9 @@ public:
         }
 
     virtual ~seller() = default;
+    int getSellerId() const { return sellerId; }
+    const std::string& getSellerName() const { return sellerName; }
+    const vector<Item>& getItems() const { return items; }
 
     void addNewItem(int newId, const std::string& newName, int newQuantity, double newPrice) {
         Item newItem(newId, newName, newQuantity, newPrice);
